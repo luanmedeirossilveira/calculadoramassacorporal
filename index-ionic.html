@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ionic Basics</title>
+    <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+        nomodule
+        src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="dark">
+                    <ion-menu-button></ion-menu-button>
+                    </ion-buttons>
+                <ion-title>
+                    Calculadora de Massa Muscular
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+            <ion-item>
+                <ion-label position="floating">Sua Altura</ion-label>
+                <ion-input id="height-input"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Seu Peso</ion-label>
+                <ion-input id="weight-input"></ion-input>
+            </ion-item>
+
+            <ion-grid class="ion-text-center ion-margin">
+                <ion-row>
+                    <ion-col>
+                        <ion-button fill="clear" color="dark" id="calc-btn">
+                            <ion-icon slot="start" name="calculator-outline"></ion-icon>
+                            Calcular
+                        </ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button fill="clear" color="dark" id="reset-btn">
+                            <ion-icon slot="start" name="refresh-outline"></ion-icon>
+                            Resetar
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col id="resultado">
+                        
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-content>
+        
+    </ion-app>
+    <script type="module">
+        import { menuController } from '@ionic/core';
+        window.menuController = menuController;
+    </script>
+    
+    <script>
+      function openFirst() {
+        menuController.enable(true, 'first');
+        menuController.open('first');
+      }
+    
+      function openEnd() {
+        menuController.open('end');
+      }
+    
+      function openCustom() {
+        menuController.enable(true, 'custom');
+        menuController.open('custom');
+      }
+    </script>
+</body>
+</html>
