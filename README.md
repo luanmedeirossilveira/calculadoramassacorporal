@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100" height="200" alt="Design by DevPleno" src="https://github.com/luanmedeirossilveira/calculadoramassacorporal/blob/master/cal.webp">
+  <img width="250" height="200" alt="Design by DevPleno" src="https://github.com/luanmedeirossilveira/calculadoramassacorporal/blob/master/cal.webp">
 </p>
 
 # 🔭 Projeto 
