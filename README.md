@@ -4,7 +4,7 @@
 
 # 🔭 Projeto 
 * Aplicado em conjunto ao canal Academind.
-* Através de dos valores passados, calculamos sua massa corporal.
+* Através dos valores passados, calculamos sua massa corporal.
 
 # 🛠 Tecnologias
 Este projeto foi desenvolvido com as seguintes tecnologias
